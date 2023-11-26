@@ -17,11 +17,11 @@ type ErrorHandler interface {
 	HasError(w http.ResponseWriter) bool
 }
 
-type routerRequest struct {
-	dto            ErrorHandler
-	method         string
-	handler        func(http.ResponseWriter, interface{})
-	validationType string
+type RouterRequest struct {
+	DTO            ErrorHandler
+	Method         string
+	Handler        func(http.ResponseWriter, interface{})
+	ValidationType string
 }
 
 type Token struct {
@@ -33,7 +33,7 @@ func (t Token) HasError(w http.ResponseWriter) bool {
 	return false
 }
 
-var RouterMap = map[string]routerRequest{}
+var RouterMap = map[string]RouterRequest{}
 
 func Routers() {
 	r := mux.NewRouter()
@@ -71,20 +71,20 @@ func middleHandler(w http.ResponseWriter, r *http.Request) {
 	if !ok {
 		helper.SendErrorResponse(w, "invalid URL", "", http.StatusNotFound)
 	}
-	json.Unmarshal(b, reqObj.dto)
+	json.Unmarshal(b, reqObj.DTO)
 	// check for errors
-	if reqObj.dto.HasError(w) {
+	if reqObj.DTO.HasError(w) {
 		return
 	}
-	if reqObj.validationType == constants.NoneValidation {
-		reqObj.handler(w, reqObj.dto)
+	if reqObj.ValidationType == constants.NoneValidation {
+		reqObj.Handler(w, reqObj.DTO)
 		return
 	}
 
 	// check for auth token
 	req := &Token{}
 	json.Unmarshal(b, req)
-	switch reqObj.validationType {
+	switch reqObj.ValidationType {
 	case constants.JWTValidation:
 		// its not coming here
 		if jwtAuth.IsJWTTokenExpired(req.AccessToken, req.RefreshToken) {
@@ -92,6 +92,6 @@ func middleHandler(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 	}
-	reqObj.handler(w, reqObj.dto)
+	reqObj.Handler(w, reqObj.DTO)
 
 }
