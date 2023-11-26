@@ -8,7 +8,7 @@ import (
 
 	jwtAuth "github.com/Mitmadhu/broker/auth/jwt"
 	"github.com/Mitmadhu/broker/constants"
-	"github.com/Mitmadhu/broker/helper"
+	"github.com/Mitmadhu/commons/helper"
 	"github.com/gorilla/handlers"
 	"github.com/gorilla/mux"
 )
