@@ -1,0 +1,18 @@
+# github.com/Mitmadhu/broker v1.0.1-0.20231125150529-c5950db02c57
+## explicit; go 1.21.1
+github.com/Mitmadhu/broker/auth/jwt
+github.com/Mitmadhu/broker/constants
+github.com/Mitmadhu/broker/dto/response
+github.com/Mitmadhu/broker/helper
+# github.com/dgrijalva/jwt-go v3.2.0+incompatible
+## explicit
+github.com/dgrijalva/jwt-go
+# github.com/felixge/httpsnoop v1.0.1
+## explicit; go 1.13
+github.com/felixge/httpsnoop
+# github.com/gorilla/handlers v1.5.1
+## explicit; go 1.14
+github.com/gorilla/handlers
+# github.com/gorilla/mux v1.8.0
+## explicit; go 1.12
+github.com/gorilla/mux
