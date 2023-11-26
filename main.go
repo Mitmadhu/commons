@@ -7,7 +7,7 @@ import (
 )
 
 func main(){
-	resp, err := handle_http.HandleHttpCall("https://jsonplaceholder.typicode.com/todos", "GET", nil)
+	resp, err := handle_http.Call("https://jsonplaceholder.typicode.com/todos", "GET", nil)
 	if(err != nil){
 		print(err.Error())
 		return
