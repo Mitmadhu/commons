@@ -18,7 +18,7 @@ var ValidHTTPMethods = map[string]bool{
 	http.MethodOptions: true,
 }
 
-func Call(url string, method string, body interface{}) (interface{}, error) {
+func Call(url string, method string, body interface{}) ([]byte, error) {
 
 	_, exists := ValidHTTPMethods[method]
 	if !exists{
