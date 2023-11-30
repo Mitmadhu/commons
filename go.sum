@@ -1,5 +1,7 @@
 github.com/Mitmadhu/broker v1.0.1-0.20231125150529-c5950db02c57 h1:eqsYLabuQfJFlqluHAa7gINeZ+N5LtKFdbSXW231AoA=
 github.com/Mitmadhu/broker v1.0.1-0.20231125150529-c5950db02c57/go.mod h1:yRz8fWGBLvoRDjoFYWqZiQ1rbGskdvy1Lzy3cb26goo=
+github.com/Mitmadhu/mysqlDB v1.0.2-0.20231130143218-bdf7748b849e h1:K/ZkI/ZblTi/JoxKdXvkxbzAPDBLJ6v/jFkZ+gKvERY=
+github.com/Mitmadhu/mysqlDB v1.0.2-0.20231130143218-bdf7748b849e/go.mod h1:QuBDLeu5RdvBCxpgtAoZot94VHEv/bbMflw4HoHDzDo=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/felixge/httpsnoop v1.0.1 h1:lvB5Jl89CsZtGIWuTcDM1E/vkVs49/Ml7JJe07l8SPQ=

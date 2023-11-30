@@ -3,14 +3,21 @@ package main
 import (
 	"fmt"
 
-	"github.com/Mitmadhu/commons/handle_http"
+	"github.com/Mitmadhu/commons/clients"
+	mysqlDto "github.com/Mitmadhu/mysqlDB/dto"
 )
 
-func main(){
-	resp, err := handle_http.Call("https://jsonplaceholder.typicode.com/todos", "GET", nil)
-	if(err != nil){
-		print(err.Error())
-		return
+func main() {
+	obj := clients.MysqlClientImpl{}
+	resp, err := obj.Login("http://localhost:8081", "POST", mysqlDto.ValidateUserRequest{
+		Username: "ayush",
+		Password: "123",
+		BaseRequest: mysqlDto.BaseRequest{
+			MsgID: "123",
+		},
+	})
+	if err != nil {
+		println(err.Error())
 	}
-	fmt.Printf("%v", resp)
+	fmt.Printf("%+v", resp)
 }

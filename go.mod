@@ -4,6 +4,7 @@ go 1.21.1
 
 require (
 	github.com/Mitmadhu/broker v1.0.1-0.20231125150529-c5950db02c57
+	github.com/Mitmadhu/mysqlDB v1.0.2-0.20231130143218-bdf7748b849e
 	github.com/gorilla/handlers v1.5.1
 	github.com/gorilla/mux v1.8.0
 )

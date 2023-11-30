@@ -2,8 +2,9 @@
 ## explicit; go 1.21.1
 github.com/Mitmadhu/broker/auth/jwt
 github.com/Mitmadhu/broker/constants
-github.com/Mitmadhu/broker/dto/response
-github.com/Mitmadhu/broker/helper
+# github.com/Mitmadhu/mysqlDB v1.0.2-0.20231130143218-bdf7748b849e
+## explicit; go 1.21.1
+github.com/Mitmadhu/mysqlDB/dto
 # github.com/dgrijalva/jwt-go v3.2.0+incompatible
 ## explicit
 github.com/dgrijalva/jwt-go
