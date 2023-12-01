@@ -2,10 +2,8 @@ package clients
 
 import (
 	"encoding/json"
-	"errors"
 	"net/http"
 
-	"github.com/Mitmadhu/commons/dto/response"
 	"github.com/Mitmadhu/commons/handle_http"
 	mysqlDto "github.com/Mitmadhu/mysqlDB/dto"
 )
@@ -23,14 +21,7 @@ func (m *MysqlClientImpl) Login(url string, method string, req mysqlDto.Validate
 	if err != nil {
 		return nil, err
 	}
-	genericResp := &response.SuccessResponse{}
+	genericResp := &mysqlDto.ValidateUserResponse{}
 	err = json.Unmarshal(byteResp, genericResp)
-	if err != nil {
-		return nil, err
-	}
-	loginResp, ok := genericResp.Response.(mysqlDto.ValidateUserResponse)
-	if !ok {
-		return nil, errors.New("fail to convert into login respose type")
-	}
-	return &loginResp, nil
+	return genericResp, err
 }

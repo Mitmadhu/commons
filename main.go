@@ -19,5 +19,5 @@ func main() {
 	if err != nil {
 		println(err.Error())
 	}
-	fmt.Printf("%+v", resp)
+	fmt.Printf("%v", *resp.IsValid)
 }

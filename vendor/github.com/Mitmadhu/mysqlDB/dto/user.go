@@ -14,7 +14,8 @@ type ValidateUserRequest struct {
 }
 
 type ValidateUserResponse struct {
-	IsValid bool `json:"is_valid"`
+	BaseResponse
+	IsValid *bool `json:"is_valid"`
 }
 
 func (v ValidateUserRequest) HasError(w http.ResponseWriter) bool {
