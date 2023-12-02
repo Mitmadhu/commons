@@ -14,4 +14,5 @@ const (
 
 	// errors
 	StatusInternalServerError = "internal server error"
+	TokenExipired = "token has expired"
 )
