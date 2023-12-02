@@ -11,4 +11,7 @@ const (
 	RefreshToken   = "refreshToken"
 	JWTValidation  = "jwtValidation"
 	NoneValidation = "none"
+
+	// errors
+	StatusInternalServerError = "internal server error"
 )

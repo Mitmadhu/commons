@@ -4,6 +4,7 @@ import (
 	"encoding/json"
 	"net/http"
 
+	"github.com/Mitmadhu/commons/constants"
 	"github.com/Mitmadhu/commons/dto/response"
 )
 
@@ -11,6 +12,9 @@ func SendErrorResponse(w http.ResponseWriter, msgID, msg string, code uint64) {
 	w.Header().Set("Content-type", "application/json")
 	w.WriteHeader(int(code))
 	
+	if code == http.StatusInternalServerError {
+		msg = constants.StatusInternalServerError
+	}
 	errResp := response.ErrorResponse{
 		MsgId:      msgID,
 		Message:    msg,
