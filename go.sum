@@ -1,7 +1,9 @@
-github.com/Mitmadhu/broker v1.0.1-0.20231125150529-c5950db02c57 h1:eqsYLabuQfJFlqluHAa7gINeZ+N5LtKFdbSXW231AoA=
-github.com/Mitmadhu/broker v1.0.1-0.20231125150529-c5950db02c57/go.mod h1:yRz8fWGBLvoRDjoFYWqZiQ1rbGskdvy1Lzy3cb26goo=
-github.com/Mitmadhu/mysqlDB v1.0.2-0.20231130143218-bdf7748b849e h1:K/ZkI/ZblTi/JoxKdXvkxbzAPDBLJ6v/jFkZ+gKvERY=
-github.com/Mitmadhu/mysqlDB v1.0.2-0.20231130143218-bdf7748b849e/go.mod h1:QuBDLeu5RdvBCxpgtAoZot94VHEv/bbMflw4HoHDzDo=
+github.com/Mitmadhu/broker v1.0.1-0.20231202052903-ae0b6830ddb0 h1:AWczk0dd1UEbcMby7npChh8/VsZ4DMCjRja7mDDQCH0=
+github.com/Mitmadhu/broker v1.0.1-0.20231202052903-ae0b6830ddb0/go.mod h1:k+5x4tcd62S9CJoeo4x/rj72YHcZVo/jO3oMrIM0vzU=
+github.com/Mitmadhu/mysqlDB v1.0.2-0.20231203054703-3604da2d29b4 h1:6qCkZW5yifsSLCANRqw6cZ08oMDQ4++r+AQaZF+jMAU=
+github.com/Mitmadhu/mysqlDB v1.0.2-0.20231203054703-3604da2d29b4/go.mod h1:eXzn9Pt2w6xgGVJF1qZFyWWKW+s4gwWmbMkJk4z8mto=
+github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=
+github.com/davecgh/go-spew v1.1.1/go.mod h1:J7Y8YcW2NihsgmVo/mv3lAwl/skON4iLHjSsI+c5H38=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible h1:7qlOGliEKZXTDg6OTjfoBKDXWrumCAMpl/TFQ4/5kLM=
 github.com/dgrijalva/jwt-go v3.2.0+incompatible/go.mod h1:E3ru+11k8xSBh+hMPgOLZmtrrCbhqsmaPHjLKYnJCaQ=
 github.com/felixge/httpsnoop v1.0.1 h1:lvB5Jl89CsZtGIWuTcDM1E/vkVs49/Ml7JJe07l8SPQ=
@@ -10,3 +12,11 @@ github.com/gorilla/handlers v1.5.1 h1:9lRY6j8DEeeBT10CvO9hGW0gmky0BprnvDI5vfhUHH
 github.com/gorilla/handlers v1.5.1/go.mod h1:t8XrUpc4KVXb7HGyJ4/cEnwQiaxrX/hz1Zv/4g96P1Q=
 github.com/gorilla/mux v1.8.0 h1:i40aqfkR1h2SlN9hojwV5ZA91wcXFOvkdNIeFDP5koI=
 github.com/gorilla/mux v1.8.0/go.mod h1:DVbg23sWSpFRCP0SfiEN6jmj59UnW/n46BH5rLB71So=
+github.com/pmezard/go-difflib v1.0.0 h1:4DBwDE0NGyQoBHbLQYPwSUPoCMWR5BEzIk/f1lZbAQM=
+github.com/pmezard/go-difflib v1.0.0/go.mod h1:iKH77koFhYxTK1pcRnkKkqfTogsbg7gZNVY4sRDYZ/4=
+github.com/stretchr/testify v1.8.4 h1:CcVxjf3Q8PM0mHUKJCdn+eZZtm5yQwehR5yeSVQQcUk=
+github.com/stretchr/testify v1.8.4/go.mod h1:sz/lmYIOXD/1dqDmKjjqLyZ2RngseejIcXlSw2iwfAo=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405 h1:yhCVgyC4o1eVCa2tZl7eS0r+SDo693bJlVdllGtEeKM=
+gopkg.in/check.v1 v0.0.0-20161208181325-20d25e280405/go.mod h1:Co6ibVJAznAaIkqp8huTwlJQCZ016jof/cbN4VW5Yz0=
+gopkg.in/yaml.v3 v3.0.1 h1:fxVm/GzAzEWqLHuvctI91KS9hhNmmWOoWu0XTYJS7CA=
+gopkg.in/yaml.v3 v3.0.1/go.mod h1:K4uyk7z7BCEPqu6E+C64Yfv1cQ7kz7rIZviUmN+EgEM=
